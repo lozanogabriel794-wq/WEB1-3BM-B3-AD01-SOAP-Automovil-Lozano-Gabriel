@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoSoap - Gestión de Vehículos</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2><i class="fa-solid fa-car"></i> AutoSoap</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="active"><i class="fa-solid fa-table-list"></i> Vehículos</a>
+                <a href="#" onclick="alert('Pronto: Gestión de Categorías')"><i class="fa-solid fa-tags"></i> Categorías</a>
+                <a href="#" onclick="alert('Pronto: Reportes')"><i class="fa-solid fa-chart-pie"></i> Reportes</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-header">
+                <div class="header-title">
+                    <h1>Gestión de Vehículos</h1>
+                    <p>Administra el inventario de la concesionaria a través del servicio SOAP.</p>
+                </div>
+                <button class="btn btn-primary" id="btnNuevoVehiculo">
+                    <i class="fa-solid fa-plus"></i> Nuevo Vehículo
+                </button>
+            </header>
+
+            <div class="content-body">
+                <!-- Loader -->
+                <div id="loader" class="loader-container">
+                    <div class="spinner"></div>
+                    <p>Cargando vehículos...</p>
+                </div>
+
+                <!-- Vehicles Table -->
+                <div class="card table-card" id="tableContainer" style="display: none;">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Placa</th>
+                                <th>Marca / Modelo</th>
+                                <th>Año</th>
+                                <th>Precio</th>
+                                <th>Estado</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="vehiculosTableBody">
+                            <!-- JS will populate this -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Modal Nuevo Vehículo -->
+    <div id="modalNuevoVehiculo" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Agregar Vehículo</h2>
+                <span class="close-modal" id="closeModal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="formVehiculo">
+                    <div class="form-group">
+                        <label for="placa">Placa</label>
+                        <input type="text" id="placa" required placeholder="Ej: ABC-1234">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="marca">Marca</label>
+                            <input type="text" id="marca" required placeholder="Ej: Toyota">
+                        </div>
+                        <div class="form-group">
+                            <label for="modelo">Modelo</label>
+                            <input type="text" id="modelo" required placeholder="Ej: Corolla">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="anio">Año</label>
+                            <input type="text" id="anio" required placeholder="Ej: 2024">
+                        </div>
+                        <div class="form-group">
+                            <label for="precio">Precio ($)</label>
+                            <input type="number" step="0.01" id="precio" required placeholder="Ej: 25000.00">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="idCategoria">Categoría (ID)</label>
+                        <input type="number" id="idCategoria" required placeholder="Ej: 1 (Sedán), 2 (SUV)...">
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="estado" checked>
+                        <label for="estado">Vehículo Activo</label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="btnCancel">Cancelar</button>
+                <button class="btn btn-primary" id="btnSave"><i class="fa-solid fa-save"></i> Guardar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

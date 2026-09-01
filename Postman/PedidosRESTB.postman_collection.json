@@ -1,0 +1,138 @@
+{
+  "info": {
+    "_postman_id": "53377b97-7a44-41fe-969a-7fc1d7209b36",
+    "name": "PedidosRESTB",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "48145848"
+  },
+  "item": [
+    {
+      "name": "Deber",
+      "item": [
+        {
+          "name": "agregarehiculo",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "text/xml; charset=utf-8"
+              },
+              {
+                "key": "SOAPAction",
+                "value": "\"http://tempuri.org/IVehiculoService/AgregarVehiculo\""
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:tem=\"http://tempuri.org/\" xmlns:aut=\"http://schemas.datacontract.org/2004/07/AutoSoap.Models\">\r\n   <soapenv:Header/>\r\n   <soapenv:Body>\r\n      <tem:AgregarVehiculo>\r\n         <tem:vehiculo>\r\n            <aut:Anio>2025</aut:Anio>\r\n            <aut:Estado>true</aut:Estado>\r\n            <aut:IdCategoria>1</aut:IdCategoria>\r\n            <aut:Marca>Toyota-Lozano</aut:Marca>\r\n            <aut:Modelo>Civic</aut:Modelo>\r\n            <aut:Placa>XYZ-1234</aut:Placa>\r\n            <aut:Precio>25000.00</aut:Precio>\r\n         </tem:vehiculo>\r\n      </tem:AgregarVehiculo>\r\n   </soapenv:Body>\r\n</soapenv:Envelope>",
+              "options": {
+                "raw": {
+                  "language": "xml"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5159/Service.svc",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5159",
+              "path": [
+                "Service.svc"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "obtenervehiculoporcategoria",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "text/xml; charset=utf-8"
+              },
+              {
+                "key": "SOAPAction",
+                "value": "\"http://tempuri.org/IVehiculoService/ObtenerVehiculoPorCategoria\""
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:tem=\"http://tempuri.org/\">\r\n   <soapenv:Header/>\r\n   <soapenv:Body>\r\n      <tem:ObtenerVehiculoPorCategoria>\r\n         <tem:idCategoria>1</tem:idCategoria>\r\n      </tem:ObtenerVehiculoPorCategoria>\r\n   </soapenv:Body>\r\n</soapenv:Envelope>",
+              "options": {
+                "raw": {
+                  "language": "xml"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5159/Service.svc",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5159",
+              "path": [
+                "Service.svc"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ActualizarVehiculo",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "text/xml; charset=utf-8"
+              },
+              {
+                "key": "SOAPAction",
+                "value": "\"http://tempuri.org/IVehiculoService/ActualizarVehiculo\""
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:tem=\"http://tempuri.org/\" xmlns:aut=\"http://schemas.datacontract.org/2004/07/AutoSoap.Models\">\r\n   <soapenv:Header/>\r\n   <soapenv:Body>\r\n      <tem:ActualizarVehiculo>\r\n         <tem:vehiculo>\r\n            <aut:Anio>2023</aut:Anio>\r\n            <aut:Estado>true</aut:Estado>\r\n            <aut:IdCategoria>1</aut:IdCategoria>\r\n            <aut:IdVehiculo>4</aut:IdVehiculo>\r\n            <aut:Marca>Toyota-lozano</aut:Marca>\r\n            <aut:Modelo>Civic-GabrielAlejandro</aut:Modelo>\r\n            <aut:Placa>PBA-1234</aut:Placa>\r\n            <aut:Precio>24500.00</aut:Precio> <!-- Precio modificado -->\r\n         </tem:vehiculo>\r\n      </tem:ActualizarVehiculo>\r\n   </soapenv:Body>\r\n</soapenv:Envelope>",
+              "options": {
+                "raw": {
+                  "language": "xml"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5159/Service.svc",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5159",
+              "path": [
+                "Service.svc"
+              ],
+              "query": [
+                {
+                  "key": "",
+                  "value": "",
+                  "disabled": true
+                },
+                {
+                  "key": "",
+                  "value": "",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
