@@ -1,4 +1,4 @@
-﻿using AutoSoap.Data;
+using AutoSoap.Data;
 using AutoSoap.Services;
 using CoreWCF;
 using CoreWCF.Configuration;
@@ -15,6 +15,8 @@ builder.Services.AddDbContext<ConcesionariaDbContext>(options =>
 
 builder.Services.AddScoped<IVehiculoService, VehiculoService>();
 builder.Services.AddScoped<VehiculoService>();
+
+builder.Services.AddControllers(); // Habilitar API REST (Controladores)
 
 builder.Services
     .AddServiceModelServices()
@@ -57,5 +59,7 @@ app.UseServiceModel(serviceBuilder =>
 
 var metadataBehavior = app.Services.GetRequiredService<ServiceMetadataBehavior>();
 metadataBehavior.HttpGetEnabled = true;
+
+app.MapControllers(); // Habilitar mapeo de endpoints REST
 
 app.Run();

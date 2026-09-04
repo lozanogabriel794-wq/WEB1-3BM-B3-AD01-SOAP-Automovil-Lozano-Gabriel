@@ -16,7 +16,8 @@
                 <h2><i class="fa-solid fa-car"></i> AutoSoap</h2>
             </div>
             <nav class="sidebar-nav">
-                <a href="#" class="active"><i class="fa-solid fa-table-list"></i> Vehículos</a>
+                <a href="#" class="active" id="navVehiculos"><i class="fa-solid fa-table-list"></i> Vehículos</a>
+                <a href="#" id="navMantenimientos"><i class="fa-solid fa-wrench"></i> Mantenimientos (REST)</a>
                 <a href="#" onclick="alert('Pronto: Gestión de Categorías')"><i class="fa-solid fa-tags"></i> Categorías</a>
                 <a href="#" onclick="alert('Pronto: Reportes')"><i class="fa-solid fa-chart-pie"></i> Reportes</a>
             </nav>
@@ -24,13 +25,23 @@
 
         <!-- Main Content -->
         <main class="main-content">
-            <header class="top-header">
+            <header class="top-header" id="headerVehiculos">
                 <div class="header-title">
                     <h1>Gestión de Vehículos</h1>
                     <p>Administra el inventario de la concesionaria a través del servicio SOAP.</p>
                 </div>
                 <button class="btn btn-primary" id="btnNuevoVehiculo">
                     <i class="fa-solid fa-plus"></i> Nuevo Vehículo
+                </button>
+            </header>
+
+            <header class="top-header" id="headerMantenimientos" style="display: none;">
+                <div class="header-title">
+                    <h1>Mantenimientos (REST)</h1>
+                    <p>Gestiona los mantenimientos usando Web API (REST).</p>
+                </div>
+                <button class="btn btn-primary" id="btnNuevoMantenimiento">
+                    <i class="fa-solid fa-plus"></i> Nuevo Mantenimiento
                 </button>
             </header>
 
@@ -57,6 +68,25 @@
                         </thead>
                         <tbody id="vehiculosTableBody">
                             <!-- JS will populate this -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Mantenimientos Table -->
+                <div class="card table-card" id="tableMantenimientosContainer" style="display: none;">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Fecha</th>
+                                <th>Tipo</th>
+                                <th>Costo</th>
+                                <th>Vehículo ID</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="mantenimientosTableBody">
+                            <!-- JS will populate this via REST -->
                         </tbody>
                     </table>
                 </div>
@@ -113,7 +143,58 @@
             </div>
         </div>
     </div>
+    <!-- Modal Nuevo Mantenimiento -->
+    <div id="modalMantenimiento" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalMantenimientoTitle">Agregar Mantenimiento</h2>
+                <span class="close-modal" id="closeModalMantenimiento">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="formMantenimiento">
+                    <input type="hidden" id="mantId" value="0">
+                    <div class="form-group">
+                        <label for="mantFecha">Fecha</label>
+                        <input type="date" id="mantFecha" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="mantTipo">Tipo (Ej: Preventivo, Correctivo)</label>
+                            <input type="text" id="mantTipo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mantCosto">Costo ($)</label>
+                            <input type="number" step="0.01" id="mantCosto" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="mantDescripcion">Descripción</label>
+                        <input type="text" id="mantDescripcion" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="mantKilometraje">Kilometraje</label>
+                            <input type="number" step="0.01" id="mantKilometraje" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mantIdVehiculo">ID Vehículo (Relación)</label>
+                            <input type="number" id="mantIdVehiculo" required>
+                        </div>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="mantEstado" checked>
+                        <label for="mantEstado">Estado Activo</label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="btnCancelMantenimiento">Cancelar</button>
+                <button class="btn btn-primary" id="btnSaveMantenimiento"><i class="fa-solid fa-save"></i> Guardar</button>
+            </div>
+        </div>
+    </div>
 
     <script src="app.js"></script>
+    <script src="mantenimiento.js"></script>
 </body>
 </html>

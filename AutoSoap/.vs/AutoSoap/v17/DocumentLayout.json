@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\Gabriel\\Desktop\\Tercero b P.W\\AutoSoap\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E73A9DB3-1591-4886-8280-EA232F778D8F}|AutoSoap\\AutoSoap.csproj|c:\\users\\gabriel\\desktop\\tercero b p.w\\autosoap\\autosoap\\controllers\\mantenimientoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E73A9DB3-1591-4886-8280-EA232F778D8F}|AutoSoap\\AutoSoap.csproj|solutionrelative:autosoap\\controllers\\mantenimientoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E73A9DB3-1591-4886-8280-EA232F778D8F}|AutoSoap\\AutoSoap.csproj|c:\\users\\gabriel\\desktop\\tercero b p.w\\autosoap\\autosoap\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E73A9DB3-1591-4886-8280-EA232F778D8F}|AutoSoap\\AutoSoap.csproj|solutionrelative:autosoap\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E73A9DB3-1591-4886-8280-EA232F778D8F}|AutoSoap\\AutoSoap.csproj|c:\\users\\gabriel\\desktop\\tercero b p.w\\autosoap\\autosoap\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E73A9DB3-1591-4886-8280-EA232F778D8F}|AutoSoap\\AutoSoap.csproj|solutionrelative:autosoap\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E73A9DB3-1591-4886-8280-EA232F778D8F}|AutoSoap\\AutoSoap.csproj|c:\\users\\gabriel\\desktop\\tercero b p.w\\autosoap\\autosoap\\wwwroot\\mantenimiento.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{E73A9DB3-1591-4886-8280-EA232F778D8F}|AutoSoap\\AutoSoap.csproj|solutionrelative:autosoap\\wwwroot\\mantenimiento.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E73A9DB3-1591-4886-8280-EA232F778D8F}|AutoSoap\\AutoSoap.csproj|c:\\users\\gabriel\\desktop\\tercero b p.w\\autosoap\\autosoap\\data\\concesionariadbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E73A9DB3-1591-4886-8280-EA232F778D8F}|AutoSoap\\AutoSoap.csproj|solutionrelative:autosoap\\data\\concesionariadbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -27,10 +43,6 @@
       "RelativeMoniker": "D:0:0:{E73A9DB3-1591-4886-8280-EA232F778D8F}|AutoSoap\\AutoSoap.csproj|solutionrelative:autosoap\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E73A9DB3-1591-4886-8280-EA232F778D8F}|AutoSoap\\AutoSoap.csproj|c:\\users\\gabriel\\desktop\\tercero b p.w\\autosoap\\autosoap\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E73A9DB3-1591-4886-8280-EA232F778D8F}|AutoSoap\\AutoSoap.csproj|solutionrelative:autosoap\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E73A9DB3-1591-4886-8280-EA232F778D8F}|AutoSoap\\AutoSoap.csproj|c:\\users\\gabriel\\desktop\\tercero b p.w\\autosoap\\autosoap\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E73A9DB3-1591-4886-8280-EA232F778D8F}|AutoSoap\\AutoSoap.csproj|solutionrelative:autosoap\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
@@ -42,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,7 +74,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
+              "Title": "MantenimientosController.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\Desktop\\Tercero b P.W\\AutoSoap\\AutoSoap\\Controllers\\MantenimientosController.cs",
+              "RelativeDocumentMoniker": "AutoSoap\\Controllers\\MantenimientosController.cs",
+              "ToolTip": "C:\\Users\\Gabriel\\Desktop\\Tercero b P.W\\AutoSoap\\AutoSoap\\Controllers\\MantenimientosController.cs",
+              "RelativeToolTip": "AutoSoap\\Controllers\\MantenimientosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-02T04:14:01.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\Desktop\\Tercero b P.W\\AutoSoap\\AutoSoap\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "AutoSoap\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Gabriel\\Desktop\\Tercero b P.W\\AutoSoap\\AutoSoap\\Properties\\launchSettings.json",
+              "RelativeToolTip": "AutoSoap\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAiwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-09-02T04:12:53.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "mantenimiento.js",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\Desktop\\Tercero b P.W\\AutoSoap\\AutoSoap\\wwwroot\\mantenimiento.js",
+              "RelativeDocumentMoniker": "AutoSoap\\wwwroot\\mantenimiento.js",
+              "ToolTip": "C:\\Users\\Gabriel\\Desktop\\Tercero b P.W\\AutoSoap\\AutoSoap\\wwwroot\\mantenimiento.js",
+              "RelativeToolTip": "AutoSoap\\wwwroot\\mantenimiento.js",
+              "ViewState": "AgIAAJsAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-09-02T04:06:35.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\Gabriel\\Desktop\\Tercero b P.W\\AutoSoap\\AutoSoap\\wwwroot\\index.html",
               "RelativeDocumentMoniker": "AutoSoap\\wwwroot\\index.html",
@@ -74,20 +125,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "ConcesionariaDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Gabriel\\Desktop\\Tercero b P.W\\AutoSoap\\AutoSoap\\Data\\ConcesionariaDbContext.cs",
               "RelativeDocumentMoniker": "AutoSoap\\Data\\ConcesionariaDbContext.cs",
               "ToolTip": "C:\\Users\\Gabriel\\Desktop\\Tercero b P.W\\AutoSoap\\AutoSoap\\Data\\ConcesionariaDbContext.cs",
               "RelativeToolTip": "AutoSoap\\Data\\ConcesionariaDbContext.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAA6wBwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAiwBwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-24T01:42:31.096Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Gabriel\\Desktop\\Tercero b P.W\\AutoSoap\\AutoSoap\\appsettings.json",
               "RelativeDocumentMoniker": "AutoSoap\\appsettings.json",
@@ -95,12 +146,11 @@
               "RelativeToolTip": "AutoSoap\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-08-24T01:41:32.962Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-24T01:41:32.962Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "VehiculoService.cs",
               "DocumentMoniker": "C:\\Users\\Gabriel\\Desktop\\Tercero b P.W\\AutoSoap\\AutoSoap\\Services\\VehiculoService.cs",
               "RelativeDocumentMoniker": "AutoSoap\\Services\\VehiculoService.cs",
@@ -108,12 +158,11 @@
               "RelativeToolTip": "AutoSoap\\Services\\VehiculoService.cs",
               "ViewState": "AgIAAE8AAAAAAAAAAAAIwGcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-23T04:39:14.975Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-23T04:39:14.975Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "IVehiculoService.cs",
               "DocumentMoniker": "C:\\Users\\Gabriel\\Desktop\\Tercero b P.W\\AutoSoap\\AutoSoap\\Services\\IVehiculoService.cs",
               "RelativeDocumentMoniker": "AutoSoap\\Services\\IVehiculoService.cs",
@@ -121,12 +170,11 @@
               "RelativeToolTip": "AutoSoap\\Services\\IVehiculoService.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAxwCEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-23T04:39:13.825Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-23T04:39:13.825Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Vehiculo.cs",
               "DocumentMoniker": "C:\\Users\\Gabriel\\Desktop\\Tercero b P.W\\AutoSoap\\AutoSoap\\Models\\Vehiculo.cs",
               "RelativeDocumentMoniker": "AutoSoap\\Models\\Vehiculo.cs",
@@ -134,12 +182,11 @@
               "RelativeToolTip": "AutoSoap\\Models\\Vehiculo.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAxwCAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-23T04:39:11.803Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-23T04:39:11.803Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "Categoria.cs",
               "DocumentMoniker": "C:\\Users\\Gabriel\\Desktop\\Tercero b P.W\\AutoSoap\\AutoSoap\\Models\\Categoria.cs",
               "RelativeDocumentMoniker": "AutoSoap\\Models\\Categoria.cs",
@@ -147,18 +194,17 @@
               "RelativeToolTip": "AutoSoap\\Models\\Categoria.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-23T04:39:10.543Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-23T04:39:10.543Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Gabriel\\Desktop\\Tercero b P.W\\AutoSoap\\AutoSoap\\Program.cs",
               "RelativeDocumentMoniker": "AutoSoap\\Program.cs",
               "ToolTip": "C:\\Users\\Gabriel\\Desktop\\Tercero b P.W\\AutoSoap\\AutoSoap\\Program.cs",
               "RelativeToolTip": "AutoSoap\\Program.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAmwDwAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAkwEAAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-23T04:38:24.781Z",
               "EditorCaption": ""
