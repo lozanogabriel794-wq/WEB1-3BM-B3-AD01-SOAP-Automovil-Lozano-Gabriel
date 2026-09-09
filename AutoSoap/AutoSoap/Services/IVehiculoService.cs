@@ -10,6 +10,18 @@ namespace AutoSoap.Services
         List<Categoria> ObtenerCategorias();
 
         [OperationContract]
+        Categoria ObtenerCategoria(int id);
+
+        [OperationContract]
+        bool AgregarCategoria(Categoria categoria);
+
+        [OperationContract]
+        bool ActualizarCategoria(Categoria categoria);
+
+        [OperationContract]
+        bool EliminarCategoria(int id);
+
+        [OperationContract]
         List<Vehiculo> ObtenerVehiculos();
 
         [OperationContract]

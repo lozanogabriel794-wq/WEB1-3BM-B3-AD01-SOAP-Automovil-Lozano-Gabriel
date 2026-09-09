@@ -1,0 +1,4 @@
+C:\Users\Gabriel\Desktop\Tercero b P.W\AutoSoap\AutoSoap\wwwroot\index.html
+C:\Users\Gabriel\Desktop\Tercero b P.W\AutoSoap\AutoSoap\wwwroot\style.css
+C:\Users\Gabriel\Desktop\Tercero b P.W\AutoSoap\AutoSoap\wwwroot\app.js
+C:\Users\Gabriel\Desktop\Tercero b P.W\AutoSoap\AutoSoap\wwwroot\mantenimiento.js

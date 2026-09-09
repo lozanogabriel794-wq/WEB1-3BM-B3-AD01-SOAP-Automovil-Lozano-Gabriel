@@ -1,0 +1,71 @@
+<div class="dashboard-hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1 class="hero-title">AutoSoap Premium</h1>
+    <p class="hero-subtitle">Gestión avanzada y control total de tu flota vehicular y mantenimientos, potenciado por datos en tiempo real.</p>
+    
+    <div class="glass-card mt-4">
+      
+      <div *ngIf="loading" class="loading-spinner">
+        <div class="spinner-border text-primary" role="status">
+          <span class="visually-hidden">Cargando...</span>
+        </div>
+        <span>Sincronizando datos climáticos de {{ciudad}}...</span>
+      </div>
+
+      <div *ngIf="error" class="alert alert-danger" style="background: rgba(230,57,70,0.1); border: 1px solid var(--danger); color: #fff;">
+        <i class="bi bi-exclamation-triangle-fill me-2"></i> Error de conexión con el satélite meteorológico.
+      </div>
+
+      <div *ngIf="climaData && !loading">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <div class="weather-header mb-0">
+            <h4 class="mb-0 d-flex align-items-center">
+              <img src="http://openweathermap.org/img/wn/{{climaData.weather[0].icon}}@2x.png" alt="weather icon" width="50" height="50" class="me-2" style="filter: drop-shadow(0 0 5px rgba(255,255,255,0.3));">
+              Condiciones en {{climaData.name}}
+            </h4>
+          </div>
+          <div style="width: 200px;">
+            <select class="form-select form-select-sm" [(ngModel)]="ciudad" (change)="cambiarCiudad()">
+              <option *ngFor="let c of ciudades" [value]="c">{{c}}</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="weather-data d-flex flex-wrap gap-4 mb-4">
+          <div class="weather-item flex-fill">
+            <span class="weather-label">Estado</span>
+            <span class="weather-value text-capitalize">{{climaData.weather[0].description}}</span>
+          </div>
+          <div class="weather-item flex-fill">
+            <span class="weather-label">Temperatura</span>
+            <span class="weather-value">{{climaData.main.temp}} °C</span>
+          </div>
+          <div class="weather-item flex-fill">
+            <span class="weather-label">Humedad</span>
+            <span class="weather-value">{{climaData.main.humidity}}%</span>
+          </div>
+          <div class="weather-item flex-fill">
+            <span class="weather-label">Viento</span>
+            <span class="weather-value">{{climaData.wind.speed}} m/s</span>
+          </div>
+        </div>
+
+        <div class="recommendation-box" [ngClass]="{'warning': climaData.weather[0].main.includes('Rain') || climaData.weather[0].main.includes('Drizzle') || climaData.main.temp > 30}">
+          <span class="weather-label d-block mb-1">Recomendación del Sistema</span>
+          
+          <p class="mb-0" *ngIf="climaData.weather[0].main.includes('Rain') || climaData.weather[0].main.includes('Drizzle')">
+            🌧️ Lluvia detectada. Priorizar revisión de neumáticos, limpiaparabrisas y sistema de frenos.
+          </p>
+          <p class="mb-0" *ngIf="climaData.main.temp > 30">
+            ☀️ Altas temperaturas. Agendar inspección urgente de refrigerante y aire acondicionado.
+          </p>
+          <p class="mb-0" *ngIf="!climaData.weather[0].main.includes('Rain') && !climaData.weather[0].main.includes('Drizzle') && climaData.main.temp <= 30">
+            ✅ Condiciones óptimas. Operación normal y mantenimientos preventivos estándar. Tiempos de secado de pintura normales.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

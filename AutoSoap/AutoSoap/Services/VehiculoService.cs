@@ -17,6 +17,66 @@ namespace AutoSoap.Services
             return _context.Categoria.ToList();
         }
 
+        public Categoria ObtenerCategoria(int id)
+        {
+            return _context.Categoria.FirstOrDefault(c => c.IdCategoria == id)!;
+        }
+
+        public bool AgregarCategoria(Categoria categoria)
+        {
+            try
+            {
+                _context.Categoria.Add(categoria);
+                _context.SaveChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public bool ActualizarCategoria(Categoria categoria)
+        {
+            try
+            {
+                var existing = _context.Categoria.FirstOrDefault(c => c.IdCategoria == categoria.IdCategoria);
+                if (existing != null)
+                {
+                    existing.Nombre = categoria.Nombre;
+                    existing.Descripcion = categoria.Descripcion;
+                    existing.Estado = categoria.Estado;
+                    
+                    _context.SaveChanges();
+                    return true;
+                }
+                return false;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public bool EliminarCategoria(int id)
+        {
+            try
+            {
+                var categoria = _context.Categoria.FirstOrDefault(c => c.IdCategoria == id);
+                if (categoria != null)
+                {
+                    _context.Categoria.Remove(categoria);
+                    _context.SaveChanges();
+                    return true;
+                }
+                return false;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
         public List<Vehiculo> ObtenerVehiculos()
         {
             return _context.Vehiculo.ToList();
